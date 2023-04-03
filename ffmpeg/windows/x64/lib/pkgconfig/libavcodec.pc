@@ -1,0 +1,14 @@
+prefix=../windows
+exec_prefix=${prefix}
+libdir=../windows/lib
+includedir=../windows/include
+
+Name: libavcodec
+Description: FFmpeg codec library
+Version: 60.6.101
+Requires: libavutil >= 58.5.100
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavcodec ole32.lib user32.lib
+Libs.private: 
+Cflags: -I${includedir}

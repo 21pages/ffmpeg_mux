@@ -1,0 +1,14 @@
+prefix=../windows
+exec_prefix=${prefix}
+libdir=../windows/lib
+includedir=../windows/include
+
+Name: libavutil
+Description: FFmpeg utility library
+Version: 58.5.100
+Requires: 
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavutil user32.lib bcrypt.lib
+Libs.private: 
+Cflags: -I${includedir}
